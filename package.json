@@ -1,0 +1,51 @@
+{
+  "name": "project-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon --exec ./node_modules/.bin/babel-node app.js",
+    "start": "node dist/app.js",
+    "build": "babel ./ --out-dir ./dist --ignore node_modules/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shirmagen/project-starter.git"
+  },
+  "author": "Shir Magen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shirmagen/project-starter/issues"
+  },
+  "homepage": "https://github.com/shirmagen/project-starter#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/parser": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.6",
+    "dotenv-extended": "^2.9.0",
+    "env-bunyan": "^0.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-async-router": "^0.1.15",
+    "express-json-error-handler": "^4.0.0",
+    "express-mongoose-errors": "^0.2.0",
+    "express-param-objectid": "^1.0.0",
+    "express-validation-middleware": "^1.0.2",
+    "http-errors": "^1.8.0",
+    "joi": "^17.4.2",
+    "mongoose": "^6.0.7"
+  }
+}
